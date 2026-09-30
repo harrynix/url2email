@@ -5,7 +5,9 @@ import requests
 # -----------------------------
 # CONFIG
 # -----------------------------
-API_KEY = "JCt-CT9OpzmPC3ZfTjO8Yg"
+import streamlit as st
+API_KEY = st.secrets["API_KEY"]
+
 
 TARGET_TITLES = [
     "CEO",
