@@ -7,7 +7,7 @@ import requests
 # -----------------------------
 import streamlit as st
 API_KEY = st.text_input("Enter your Apollo API key", type="password")
-if not user_api_key:
+if not API_KEY:
     st.stop()
 
 
