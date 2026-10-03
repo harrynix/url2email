@@ -6,7 +6,11 @@ import requests
 # CONFIG
 # -----------------------------
 import streamlit as st
-API_KEY = st.secrets["API_KEY"]
+API_KEY = st.text_input("Enter your Apollo API key", type="password")
+if not user_api_key:
+    st.stop()
+
+
 
 
 TARGET_TITLES = [
